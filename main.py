@@ -19,15 +19,15 @@ from werkzeug.utils import redirect
 
 
 app = Flask(__name__)
-app.secret_key = 'dGhpc2lzbXlhcHBzZWNyZWF0a2V5'
+app.secret_key = 'Replace with your own key'
 
 
 app.config['MAIL_SERVER'] = 'smtp-mail.outlook.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'sonacloud@sonatech.ac.in'
-app.config['MAIL_PASSWORD'] = 'G4b$Sd7QJZaHbNJ'
-app.config['MAIL_DEFAULT_SENDER'] = 'sonacloud@sonatech.ac.in'
+app.config['MAIL_USERNAME'] = 'Your email ID'
+app.config['MAIL_PASSWORD'] = 'Your Password'
+app.config['MAIL_DEFAULT_SENDER'] = 'your mail here'
 
 mail = Mail(app)
 
@@ -36,8 +36,8 @@ user = 'root'  # Replace with your MySQL username
 password = ''  # Replace with your MySQL password
 database = 'users'  # Replace with your MySQL database name
 baseurl = 'http://172.16.23.5:8080/client/api?'
-secretkey = 'dmKJEDmijUYC6V53mpQZzNipzPryi0lizIYx9dvCepifE4XhcwkLX7W7txruiRaXkPHwadnl4lFGSVTUD7Ho_w'
-api_key = 'CN9MeFkRSP09yNJ8d4W1GxLrBJEvGUATpipIpzu9GA6MC6SxNI-1ixRLjX2eANF6znPzZ1n0Unzc5OjqHEwRZA'
+secretkey = 'Your Cloudstack secret key'
+api_key = 'Your Cloudstack API key'
 
 
 def create_connection():
